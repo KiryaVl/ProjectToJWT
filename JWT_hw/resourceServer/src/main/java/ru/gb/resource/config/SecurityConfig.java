@@ -11,19 +11,13 @@ import org.springframework.security.web.SecurityFilterChain;
  */
 @Configuration
 public class SecurityConfig {
-    /**
-     * Правила фильтрации.
-     * @param http защищенный http запрос.
-     * @return
-     * @throws Exception
-     */
+    // Конфигурация SecurityFilterChain
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authz -> authz
-                .anyRequest().authenticated())
+                        .anyRequest().authenticated())
                 .oauth2ResourceServer(oauth2 -> oauth2
                         .jwt(Customizer.withDefaults()));
         return http.build();
     }
-
 }
