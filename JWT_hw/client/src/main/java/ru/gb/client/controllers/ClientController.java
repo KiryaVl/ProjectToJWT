@@ -23,7 +23,7 @@ public class ClientController {
      * Объект для получения токена авторизации.
      */
     @Autowired
-    private OAuth2AuthorizedClientService authorizedClientService;
+    OAuth2AuthorizedClientService authorizedClientService;
 
     /**
      * Получение представления .

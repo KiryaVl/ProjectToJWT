@@ -4,4 +4,5 @@
 - AuthServerApp,
 - ClientApp
 #### Из проекта в IDE
-P.S. Добавлена и подключена зависимость Eureka, ApiGateway.
+P.S. Добавлена и подключена зависимость Eureka, ApiGateway и модульный тест для ResourceController, а так же 
+интеграционный тест ClientIntegrationTest.
