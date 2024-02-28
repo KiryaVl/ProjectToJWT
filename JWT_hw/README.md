@@ -4,3 +4,4 @@
 - AuthServerApp,
 - ClientApp
 #### Из проекта в IDE
+P.S. Добавлена и подключена зависимость Eureka, ApiGateway.
